@@ -60,9 +60,8 @@
   /* ---- BOARD ---- */
   .lanes {
     display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    gap: 16px;
+    align-items: end;
+    justify-content: space-between;
   
     padding: 24px 32px;
   
