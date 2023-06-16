@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   if (!value) return;
 
   const newTask = document.createElement("p");
-  newTask.classList.add("task");
+  newTask.classList.add("card");
   newTask.setAttribute("draggable", "true");
   newTask.innerText = value;
 

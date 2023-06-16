@@ -1,12 +1,12 @@
-const draggables = document.querySelectorAll(".task");
+const draggables = document.querySelectorAll(".card");
 const droppables = document.querySelectorAll(".swim-lane");
 
-draggables.forEach((task) => {
-  task.addEventListener("dragstart", () => {
-    task.classList.add("is-dragging");
+draggables.forEach((card) => {
+  card.addEventListener("dragstart", () => {
+    card.classList.add("is-dragging");
   });
-  task.addEventListener("dragend", () => {
-    task.classList.remove("is-dragging");
+  card.addEventListener("dragend", () => {
+    card.classList.remove("is-dragging");
   });
 });
 
@@ -14,33 +14,33 @@ droppables.forEach((zone) => {
   zone.addEventListener("dragover", (e) => {
     e.preventDefault();
 
-    const bottomTask = insertAboveTask(zone, e.clientY);
-    const curTask = document.querySelector(".is-dragging");
+    const bottomCard = insertAboveTask(zone, e.clientY);
+    const curCard = document.querySelector(".is-dragging");
 
-    if (!bottomTask) {
-      zone.appendChild(curTask);
+    if (!bottomCard) {
+      zone.appendChild(curCard);
     } else {
-      zone.insertBefore(curTask, bottomTask);
+      zone.insertBefore(curCard, bottomCard);
     }
   });
 });
 
-const insertAboveTask = (zone, mouseY) => {
-  const els = zone.querySelectorAll(".task:not(.is-dragging)");
+const insertAboveTask = (card, mouseY) => {
+  const els = zone.querySelectorAll(".card:not(.is-dragging)");
 
-  let closestTask = null;
+  let closestCard = null;
   let closestOffset = Number.NEGATIVE_INFINITY;
 
-  els.forEach((task) => {
-    const { top } = task.getBoundingClientRect();
+  els.forEach((card) => {
+    const { top } = card.getBoundingClientRect();
 
     const offset = mouseY - top;
 
     if (offset < 0 && offset > closestOffset) {
       closestOffset = offset;
-      closestTask = task;
+      closestCard = card;
     }
   });
 
-  return closestTask;
+  return closestCard;
 };
