@@ -3,7 +3,16 @@ var canPlayCard =true;
 const draggables = document.querySelectorAll(".card");
 const droppables = document.querySelectorAll(".swim-lane");
 
-if (canPlayCard) {
+if(canPlayCard) {
+    draggables.forEach((card) => {
+        card.setAttribute("draggable","false");
+    });
+} else {
+    draggables.forEach((card) => {
+        card.setAttribute("draggable","true");
+    });
+}
+
 draggables.forEach((card) => {
   card.addEventListener("dragstart", () => {
     card.classList.add("is-dragging");
@@ -47,4 +56,3 @@ const insertAboveTask = (card, mouseY) => {
 
   return closestCard;
 };
-}
