@@ -92,7 +92,7 @@
     flex-shrink: 0;
   }
   
-  .task {
+  .card {
     background: white;
     color: black;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
