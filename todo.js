@@ -1,10 +1,11 @@
 const form = document.getElementById("todo-form");
-const input = document.getElementById("todo-input");
 const todoLane = document.getElementById("todo-lane");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const value = input.value;
+
+  //change below for diff card select
+  const value = 'Soldier';
 
   if (!value) return;
 
