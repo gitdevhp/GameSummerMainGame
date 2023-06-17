@@ -23,6 +23,4 @@ form.addEventListener("submit", (e) => {
   });
 
   todoLane.appendChild(newTask);
-
-  input.value = "";
 });
