@@ -1,5 +1,5 @@
 const form = document.getElementById("todo-form");
-const todoLane = document.getElementById("todo-lane");
+const curHand = document.getElementById("curHands");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -22,5 +22,5 @@ form.addEventListener("submit", (e) => {
     newTask.classList.remove("is-dragging");
   });
 
-  todoLane.appendChild(newTask);
+  curHand.appendChild(newTask);
 });
