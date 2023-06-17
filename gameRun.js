@@ -18,6 +18,18 @@ function setLvlEnem() {
 function spawnGuy(){
     var position = Math.floor(Math.random()*3)+1;
     console.log(position);
+    const newGuy = document.createElement('p');
+    if(position==1) {
+        newGuy.setAttribute("id", "guyLower");
+    } else if (position==2) {
+        newGuy.setAttribute("id", "guyMiddle");
+    } else {
+        newGuy.setAttribute("id", "guyTop");
+    }
+    newGuy.setAttribute('style',"display: none;")
+    newGuy.innerHTML='enemGuy';
+    document.getElementById("enemHold").appendChild(newGuy);
+    console.log("created Guy");
 }
 
 function spawnHos(){
