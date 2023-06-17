@@ -5,11 +5,11 @@
 
 async function main() {
     const response = await fetch("enemy.json");
-    const jsonData = await response.json();
-    console.log(jsonData);
+    const currEnem = await response.json();
+    console.log(currEnem);
 
     var curLvl = 0;
-    currEnem = JSON.parse(jsonData);
+    
 
     function setLvlEnem() {
         var solCount = currEnem[curLvl].SoldierNum;
