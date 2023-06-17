@@ -3,6 +3,9 @@
         {
             "SoldierNum": 1,
             "HostageNum": 1
+        },
+        {
+            "SoldierNum": 2
         }
     ]
 }
