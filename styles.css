@@ -22,11 +22,12 @@
     background-size: cover;
   }
   
-  #lvl {
+  #lvlInfo {
     position: absolute;
     top: 0px;
     right: 0px;
-    font-size: 2em;
+    color: white;
+    font-size: 1.5em;
     font-weight: bold;
   }
   /* ---- FORM ---- */
