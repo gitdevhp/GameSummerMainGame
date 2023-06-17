@@ -15,7 +15,7 @@ function setLvlEnem() {
     }
 }
 
-function spawnGuy(){
+function spawnGuy() {
     var position = Math.floor(Math.random()*3)+1;
     console.log(position);
     const newGuy = document.createElement('p');
