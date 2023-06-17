@@ -10,8 +10,8 @@ async function setLvlEnem() {
   
     var curLvl = 0;
   
-    var solCount = currEnem[curLvl].SoldierNum;
-    var hosCount = currEnem[curLvl].HostageNum;
+    var solCount = currEnem.Levels[curLvl].SoldierNum;
+    var hosCount = currEnem.Levels[curLvl].HostageNum;
     for (let i = 0; i < solCount; i++) {
       spawnGuy();
     }
