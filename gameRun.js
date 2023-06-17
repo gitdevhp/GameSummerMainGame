@@ -40,7 +40,7 @@ async function main() {
     }
 
     function spawnHos(){
-        const existGuy = document.get
+        //const existGuy = document.get
     }
 }
 
