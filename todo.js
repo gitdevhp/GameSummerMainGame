@@ -31,6 +31,9 @@ for (let i = 0; i < 5; i++) {
   curHand.appendChild(newTask);
 
   openDeck.splice(selValue, 1);
+
+  //use this to check if array reset
+  console.log(openDeck);
  
 }
 });
