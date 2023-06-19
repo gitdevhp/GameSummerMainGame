@@ -6,8 +6,12 @@ var selValue = 0;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 for (let i = 0; i < 5; i++) {
+  
   if(openDeck.length==0){
-    openDeck=deck;
+    for (let o = 0; o < deck.length; o++) {
+      openDeck[o] = deck[o];
+      
+    }
   }
   //change below for diff card select
   selValue= Math.floor(Math.random()*openDeck.length);
