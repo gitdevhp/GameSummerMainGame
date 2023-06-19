@@ -39,6 +39,10 @@ async function setLvlEnem() {
   }
   
   function spawnHos() {
-    //const existGuy = document.get
+    const botEnemCount = document.querySelectorAll('[id$="guyLower"]');
+    var botPoss;
+    if(botEnemCount!=null) {
+      botPoss = 1;
+    }
   }
   
