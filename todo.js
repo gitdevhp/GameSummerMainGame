@@ -1,18 +1,16 @@
 const form = document.getElementById("todo-form");
 const curHand = document.getElementById("curHands");
 const deck = ['Soldier', 'Soldier', 'Soldier', 'Soldier'];
-var openDeck = deck;
+var openDeck = [...deck];
 var selValue = 0;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 for (let i = 0; i < 5; i++) {
-  
+
   if(openDeck.length==0){
-    for (let o = 0; o < deck.length; o++) {
-      openDeck[o] = deck[o];
-      
-    }
+      openDeck = [...deck];
   }
+  
   //change below for diff card select
   selValue= Math.floor(Math.random()*openDeck.length);
   const value = deck[selValue];
