@@ -1,7 +1,7 @@
 const form = document.getElementById("todo-form");
 const curHand = document.getElementById("curHands");
 const deck = ['Soldier', 'Soldier', 'Soldier', 'Soldier'];
-const openDeck = deck;
+var openDeck = deck;
 var selValue = 0;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
