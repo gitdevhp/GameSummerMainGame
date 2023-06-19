@@ -49,11 +49,14 @@
     font-size: 14px;
     cursor: pointer;
   }
-
-  #endTurn {
-  }
   
   /* ---- BOARD ---- */
+  #gameBut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .lanes {
     display: flex;
     align-items: end;
