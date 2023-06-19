@@ -45,7 +45,8 @@ async function setLvlEnem() {
       botPoss = 1;
     }
   }
-  
+
+  //work on this to get map and game runnning
   function runGame() {
     const placed = document.getElementById('todo-lane').querySelectorAll(".card");
     for (let i = 0; i < placed.length; i++) {
