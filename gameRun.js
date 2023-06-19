@@ -18,7 +18,6 @@ async function setLvlEnem() {
     for (let p = 0; p < hosCount; p++) {
       spawnHos();
     }
-    document.getElementById("enemCount").innerHTML("enemies: "+solCount);
   }
   
   function spawnGuy() {
@@ -36,6 +35,7 @@ async function setLvlEnem() {
     newGuy.innerHTML = 'enemGuy';
     document.getElementById("enemHold").appendChild(newGuy);
     console.log("created Guy");
+    document.getElementById("enemCount").innerHTML("enemies: "+solCount);
   }
   
   function spawnHos() {
