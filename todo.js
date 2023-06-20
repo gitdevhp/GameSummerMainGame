@@ -1,6 +1,6 @@
 const form = document.getElementById("todo-form");
-const curHand = document.getElementByClass("curHands");
-const curUtil = document.getElementByClass('util-lane')
+const curHand = document.getElementById("curHands");
+const curUtil = document.getElementById('util-lane')
 const deck = ['Soldier', 'Flashbang'];
 var openDeck = [...deck];
 var selValue = 0;
