@@ -25,15 +25,18 @@ draggables.forEach((card) => {
 droppables.forEach((zone) => {
   zone.addEventListener("dragover", (e) => {
     e.preventDefault();
+    const curCard = document.querySelector(".is-dragging");
+    if(zone.classList.contains('util-lane')&&curCard.classList.contains('utility')
+    ||zone.classList.contains('curHands')&&curCard.classList.contains('personel')){
 
     const bottomCard = insertAboveTask(zone, e.clientY);
-    const curCard = document.querySelector(".is-dragging");
 
     if (!bottomCard) {
       zone.appendChild(curCard);
     } else {
       zone.insertBefore(curCard, bottomCard);
     }
+  }
   });
 });
 
