@@ -5,7 +5,7 @@ var openDeck = [...deck];
 var selValue = 0;
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 1; i++) {
 
   if(openDeck.length==0){
       openDeck = [...deck];
@@ -17,7 +17,7 @@ for (let i = 0; i < 5; i++) {
 
   if (!value) return;
 
-  const newTask = document.createElement("p");
+  const newTask = document.createElement("div");
   newTask.classList.add("card");
   newTask.setAttribute("draggable", "true");
   newTask.innerText = value;

@@ -50,7 +50,7 @@ async function setLvlEnem() {
   function runGame() {
     const placed = document.getElementById('todo-lane').querySelectorAll(".card");
     for (let i = 0; i < placed.length; i++) {
-      const charUse = placed[i];
+      const charUse = document.createElement('button');
       document.getElementById('mapPlace').appendChild(charUse);
       
     }
