@@ -59,8 +59,8 @@
     display: flex;
     justify-content: space-between;
     
-    position: relative;
-    margin-top: 200px;
+    position: absolute;
+    margin-top: 300px;
     width: auto;
   }
 
