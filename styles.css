@@ -72,7 +72,7 @@
 
   .lanes {
     display: flex;
-    align-items: end;
+    margin-top: 800px;
     justify-content: space-between;
   
     padding: 24px 32px;
