@@ -51,6 +51,19 @@
   }
   
   /* ---- BOARD ---- */
+  #deploy-zone {
+    border-radius: 4px;
+    border-color: #ffffff;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    
+    position: relative;
+    margin-top: 200px;
+    width: auto;
+  }
+
   #gameBut {
     display: flex;
     flex-direction: row;
