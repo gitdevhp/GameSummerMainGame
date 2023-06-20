@@ -26,8 +26,8 @@ droppables.forEach((zone) => {
   zone.addEventListener("dragover", (e) => {
     e.preventDefault();
     const curCard = document.querySelector(".is-dragging");
-    if(zone.id=='util-lane'&&curCard.classList.contains('utility')
-    ||zone.id=='curHands'&&curCard.classList.contains('personel')){
+    if(zone.id=='util-zone'&&curCard.classList.contains('utility')
+    ||zone.id=='person-zone'&&curCard.classList.contains('personel')){
 
     const bottomCard = insertAboveTask(zone, e.clientY);
 
