@@ -61,7 +61,7 @@
     
     position: absolute;
     margin-top: 300px;
-    width: auto;
+    width: 100vw;
   }
 
   #gameBut {
